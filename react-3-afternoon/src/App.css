@@ -18,6 +18,11 @@
   color: black;
 }
 
+.home {
+  position: relative;
+  left: 5%;
+}
+
 .infoCard {
   background-color: rgb(248, 246, 242);
   position: relative;
@@ -45,5 +50,12 @@
 .num {
   font-weight: bold;
   font-size: 20pt;
-  
+}
+
+.title {
+  font-weight: bold;
+}
+
+.name {
+  font-weight: bold;
 }

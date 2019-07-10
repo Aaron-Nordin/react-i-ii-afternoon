@@ -31,7 +31,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">Home</header>
+        <header className="App-header">
+          <div className="home">HOME</div>
+        </header>
         <div className="background">
           <div className="infoCard">
             <div className="num">{`${this.handle25()}`}</div>
@@ -41,14 +43,19 @@ class App extends Component {
               }`}
             </div>
             <div className="from">
-              {`From: ${data[this.state.currentIndex].city}, ${
+              <span className="title">From:</span>
+              {` ${data[this.state.currentIndex].city}, ${
                 data[this.state.currentIndex].country
               }`}
             </div>
-            <div className="employer">{`Employer: ${
-              data[this.state.currentIndex].employer
-            }`}</div>
-            <div className="faveMovHead">Favorite Movies:</div>
+
+            <div className="employer">
+              <span className="title">Employer:</span>
+              {` ${data[this.state.currentIndex].employer}`}
+            </div>
+            <div className="faveMovHead">
+              <span className="title">Favorite Movies:</span>
+            </div>
             <div className="faveMovies">
               <div className="one">{`1. ${
                 data[this.state.currentIndex].favoriteMovies[0]
